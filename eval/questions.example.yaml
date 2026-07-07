@@ -1,0 +1,33 @@
+# eval/questions.example.yaml
+# 역할: Retriever 평가 질문 '예시 템플릿' (커밋용).
+# - 실제 문서에 맞춰 이 파일을 복사해 eval/questions.yaml 로 만든 뒤 수정하세요.
+#     cp eval/questions.example.yaml eval/questions.yaml
+# - eval/questions.yaml 은 실제 문서명이 들어가므로 .gitignore 로 제외됩니다.
+# - 각 질문: id / question / expected_source / note
+# - 문서명은 실제 파일명 대신 sample_document.pdf 처럼 일반화해 두었습니다.
+
+questions:
+  - id: q1
+    question: "이 문서에서 A 항목의 지급/적용 기준은 무엇인가요?"
+    expected_source: "sample_document.pdf"
+    note: "예시 - 기준/한도 관련 질문"
+
+  - id: q2
+    question: "B 절차는 어떤 순서로 진행되나요?"
+    expected_source: "sample_document.pdf"
+    note: "예시 - 절차 관련 질문"
+
+  - id: q3
+    question: "C 를 적용할 수 있는 경우(사유)는 무엇인가요?"
+    expected_source: "sample_document_2.pdf"
+    note: "예시 - 조건/사유 관련 질문"
+
+  - id: q4
+    question: "D 를 신청할 때 필요한 서류는 무엇인가요?"
+    expected_source: "sample_document_2.pdf"
+    note: "예시 - 서류/요건 관련 질문"
+
+  - id: q5
+    question: "E 의 상한이나 한도는 어떻게 정해지나요?"
+    expected_source: "sample_document.pdf"
+    note: "예시 - 상한/한도 관련 질문"

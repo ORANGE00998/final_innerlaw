@@ -1,0 +1,27 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+
+# Secrets (GitHub 에 올리지 않음)
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# RAG generated data (실제 문서 본문·임베딩 포함 → 제외)
+chroma_db/
+outputs/
+
+# Screenshots that may contain document contents
+docs/images/
+
+# Local evaluation file (실제 내부 문서명 포함 → example 만 커밋)
+eval/questions.yaml
